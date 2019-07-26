@@ -1,0 +1,19 @@
+.service {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  float: left;
+  padding: 20px;
+  margin: 0.3px;
+}
+.font-xl {
+  font-size: 30px;
+}
+.slideing-part {
+  width: 1140px;
+  height: 398.93px;
+  padding: 48px;
+  margin: 0px 15px;
+  border: 1px solid black;
+}

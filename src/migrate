@@ -1,0 +1,20 @@
+exports.up = function(knex, Promise) {
+  return knex.schema.createTable('register', table => {
+    table.integer('id').primary();
+    table.text('first_name').notNullable();
+    table.text('middle_name').notNullable();
+    table.text('last_name').notNullable();
+    table.date('birthdate');
+    table.text('gender').notNullable();
+    table
+      .text('email')
+      .notNullable()
+      .unique();
+    table.text('password').notNullable();
+    table.timestamp(true, true);
+  });
+};
+
+exports.down = function(knex, Promise) {
+  return knex.schema.dropTable('register');
+};
